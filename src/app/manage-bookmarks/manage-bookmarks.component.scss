@@ -1,0 +1,66 @@
+.manage-bookmarks-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 220px;
+  background-color: rgba($color: black, $alpha: .85);
+  backdrop-filter: blur(8px);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.content {
+  flex-grow: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sidebar-heading {
+  color: rgba($color: white, $alpha: 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item {
+  position: relative;
+  color: rgba($color: white, $alpha: 0.78);
+  padding: 5px 25px;
+  font-size: 20px;
+
+  &:hover {
+    color: rgba($color: white, $alpha: 0.5)
+  }
+
+  &::before {
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba($color: white, $alpha: 0.8);
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: .2s;
+    transform: scaleY(0);
+  }
+
+  &.selected {
+    color: rgba($color: white, $alpha: 0.95);
+
+    &::before {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+
+
+}

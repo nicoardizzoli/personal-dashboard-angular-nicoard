@@ -1,0 +1,15 @@
+.notification{
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: rgba($color: white, $alpha: 0.5);
+  padding: 15px 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
+  color: #111;
+
+  box-shadow: 0px 5px 12px rgba($color: black, $alpha: 0.12) ;
+
+}

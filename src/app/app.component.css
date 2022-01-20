@@ -1,0 +1,68 @@
+.app-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1639418510515-31148d12ed5c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0MDgyODk2OA&ixlib=rb-1.2.1&q=80&w=1920");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top-section {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.top-section h1 {
+  font-size: 120px;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+.top-section h2 {
+  font-size: 28px;
+  color: white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-section {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  min-height: 0;
+  overflow-y: scroll;
+}
+
+.bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.bottom-section app-tabs {
+  margin: auto;
+}
+/*# sourceMappingURL=app.component.css.map */

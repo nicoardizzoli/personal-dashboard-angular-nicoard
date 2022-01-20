@@ -1,0 +1,29 @@
+<div class="note-card" >
+  <div class="note-card-container">
+    <div class="note-text">
+      <div class="note-card-title">
+        {{note.title}}
+      </div>
+
+      <div class="note-card-content">
+       {{note.content}}
+     </div>
+    </div>
+
+    <div class="notes-item-actions">
+      <div class="notes-item-action-btn" (click)="editNote()">
+        <i  class="material-icons">edit</i>
+      </div>
+
+      <div class="notes-item-action-btn" (click)="deleteNote()">
+        <i  class="material-icons">delete</i>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+

@@ -1,0 +1,16 @@
+
+<div class="edit-todo-wrapper has-blurred-white-bg container">
+  <h2 class="is-bold">Edit Todo</h2>
+
+  <form #editTodoForm="ngForm" (ngSubmit)="onSubmitForm(editTodoForm)">
+    <div>
+     <p *ngIf="showValidationMessage && text.invalid" class="text-red">Required field todo text</p>
+      <input class="textbox"  type="text" placeholder="Enter todo text...." [ngModel]="todo.text" name="text" ngModel #text="ngModel" required>
+    </div>
+
+    <div class="buttons-container">
+      <a routerLink="../" class="btn"> Cancel </a>
+      <button class="btn">Save</button>
+    </div>
+  </form>
+</div>

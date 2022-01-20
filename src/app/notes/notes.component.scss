@@ -1,0 +1,35 @@
+.notes-wrapper {
+  height: 100%;
+  margin: 20px;
+}
+
+.btn {
+  background: rgba($color: black, $alpha: 0.9);
+  padding: 10px 22px;
+  color: white;
+  font-size: 18px;
+  margin: 12px;
+  display: 	inline-flex;
+  font-weight: 600;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: rgba($color: black, $alpha: .95);
+    backdrop-filter: blur(2px);
+  }
+
+  &:active {
+    background-color: rgba($color: black, $alpha: .99);
+  }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

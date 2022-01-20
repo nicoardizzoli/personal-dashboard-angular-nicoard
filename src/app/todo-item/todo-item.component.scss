@@ -1,0 +1,131 @@
+.todo-item  {
+  position: relative;
+  display: flex;
+  background-color: rgba($color: black, $alpha: 0.4);
+
+  border-radius: 25px;
+
+  padding: 10px 15px;
+  gap: 10px;
+  align-items: center;
+
+  cursor: pointer;
+
+  &-text {
+    color: rgba($color: white, $alpha: 0.6);
+
+  }
+
+  &-check-box {
+
+    display: flex;
+    padding: 4px;
+    border: 2px solid rgba(white, 0.35);
+    border-radius: 50%;
+
+
+    .completed-icon {
+      font-size: 18px;
+      opacity: 0;
+    }
+
+
+
+  }
+
+  &:hover {
+    .todo-item-text {
+      color: white;
+    }
+
+    .todo-item-check-box {
+      border-color: transparent;
+      background-color: rgba($color: white, $alpha: 0.35);
+    }
+
+    .todo-item-actions {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: .4s;
+      transform: scale(0.8);
+    }
+  }
+
+  &.completed {
+    .todo-item-text {
+        color: rgba($color: white, $alpha: 0.3);
+    }
+
+    .todo-item-check-box {
+      border-color: transparent;
+      background-color: rgba($color: rgb(0, 245, 0), $alpha: 0.8);
+    }
+
+    .completed-icon {
+      opacity: 1;
+    }
+  }
+
+  &-text,
+  &-check-box {
+    transition: 0.2s;
+  }
+
+  .todo-item-actions {
+    position: absolute;
+    display: flex;
+    right: 5px;
+    background: rgba(72, 72, 82, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    transform: scale(1);
+
+  }
+
+
+  .todo-item-action-btn i {
+    font-size: 20px;
+  }
+
+
+  .todo-item-action-btn {
+    background: transparent;
+    padding: 10px 22px;
+    color: white;
+    display: 	inline-flex;
+    font-family: inherit;
+    align-items: center;
+    cursor: pointer;
+    border-radius: inherit;
+    border: none;
+
+    &:hover {
+      background-color: rgba($color: black, $alpha: .3);
+      backdrop-filter: blur(2px);
+    }
+
+    &:active {
+      background-color: rgba($color: black, $alpha: .99);
+    }
+
+    &:first-child {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      &:hover {
+        color: green;
+      }
+
+    }
+    &:last-child {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

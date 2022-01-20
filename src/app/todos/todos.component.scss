@@ -1,0 +1,11 @@
+.todos-wrapper {
+
+  height: 100%;
+  overflow-y: auto;
+  margin: 20px;
+}
+
+app-todo-item {
+  display: block;
+  margin-bottom: 15px;
+}
